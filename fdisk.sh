@@ -3,8 +3,8 @@
 DISKPATH=/dev/sd
 
 #Update this start/end range with your drive letters ex: /dev/sdac /dev/sdd...
-STARTDISK=c
-ENDDISk=f
+START=c
+END=f
 
 
 read -p "This script is destructive and will wipe out your partitions, Are you sure? " -n 1 -r
