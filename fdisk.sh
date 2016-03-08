@@ -14,6 +14,6 @@ then
 	for i in `eval echo {$START..$END}`;
 	do
 		dd if=/dev/zero of=$DISKPATH$i bs=512 count=1
-		(echo n; echo p; echo 1; echo 1; echo; echo t; echo fd; echo w) | fdisk $DISKPATH$i
+		(echo n; echo p; echo 1; echo; echo; echo t; echo fd; echo w) | fdisk $DISKPATH$i
 	done
 fi
